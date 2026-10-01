@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
-import Todo from '../components/todo'
+import Todo from '../components/Todo'
 import './styles/app.css'
 import './styles/responsive.css'
 
