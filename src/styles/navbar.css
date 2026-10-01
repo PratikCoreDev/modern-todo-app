@@ -1,0 +1,47 @@
+nav {
+    height: 70px;
+    width: 70vw;
+    position: fixed;
+    top: 20px;
+    left: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 60px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    z-index: 100;
+}
+
+
+nav::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(
+        120deg,
+        rgba(37, 99, 235, 0.5),
+        transparent 40%,
+        rgba(96, 165, 250, 0.3)
+    );
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+nav .text {
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow:
+        0 0 15px rgba(96, 165, 250, 0.5);
+}
